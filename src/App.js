@@ -18,7 +18,11 @@ function App() {
       <header className="bg-white border-b shadow-sm py-5">
         <div className="container mx-auto px-4 flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <img src="/logo.png" alt="Hiddenza Logo" className="h-32" />
+            <img
+              src={`${process.env.PUBLIC_URL}/logo.png`}
+              alt="Hiddenza Logo"
+              className="h-32"
+            />
             <div>
               <h1 className="text-2xl font-bold text-blue-700">Hiddenza</h1>
               <p className="text-sm text-gray-500">Tech | Tourism | Education</p>
@@ -26,20 +30,22 @@ function App() {
           </div>
         </div>
       </header>
-<div className="flex items-center space-x-4 mt-6 mb-12 max-w-5xl mx-auto px-4">
-  <img
-    src="/profile.jpg"
-    alt="Musaab Al-Dabbagh"
-    className="w-24 h-24 rounded-full object-cover border-4 border-blue-600"
-  />
-  <div>
-    <h3 className="text-xl font-semibold">Musaab Al-Dabbagh</h3>
-    <p className="text-blue-600 font-medium">Founder</p>
-    <p className="text-gray-700 max-w-md mt-1">
-      Musaab Al-Dabbagh is the visionary founder of Hiddenza, leading innovation in tech, tourism, and education to deliver unmatched quality and service.
-    </p>
-  </div>
-</div>
+
+      {/* Founder Section */}
+      <div className="flex items-center gap-4 mt-6 mb-12 max-w-5xl mx-auto px-4">
+        <img
+          src={`${process.env.PUBLIC_URL}/profile.jpg`}
+          alt="Musaab Al-Dabbagh"
+          className="w-24 h-24 rounded-full object-cover border-4 border-blue-600"
+        />
+        <div>
+          <h3 className="text-xl font-semibold">Musaab Al-Dabbagh</h3>
+          <p className="text-blue-600 font-medium">Founder</p>
+          <p className="text-gray-700 max-w-md mt-1">
+            Musaab Al-Dabbagh is the visionary founder of Hiddenza, leading innovation in tech, tourism, and education to deliver unmatched quality and service.
+          </p>
+        </div>
+      </div>
 
       {/* Main Content */}
       <main className="py-12 px-4 max-w-7xl mx-auto">
