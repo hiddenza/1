@@ -9,19 +9,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import { Laptop, Server, Globe, Code, Phone, GraduationCap, Menu, X } from 'lucide-react';
 
-function App() {
-  return (
-    <Router basename="/1"> {/* Set basename to /1 */}
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </Router>
-  );
-}
+
 
 export default App;
 
