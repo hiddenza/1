@@ -2,6 +2,19 @@
 import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
+function App() {
+return (
+    <Router basename="/1">
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
+  );
+}
 import { Laptop, Server, Globe, Code, Phone, GraduationCap, Menu, X } from 'lucide-react';
 
 // Services data with online images & detailed descriptions
