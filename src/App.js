@@ -1,16 +1,17 @@
 // App.js
 import './App.css';
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Services from './pages/Services';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import { Laptop, Server, Globe, Code, Phone, GraduationCap, Menu, X } from 'lucide-react';
 
 function App() {
   return (
-    <Router basename="/1">
+    <Router>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -20,7 +21,10 @@ function App() {
       </Routes>
     </Router>
   );
-import { Laptop, Server, Globe, Code, Phone, GraduationCap, Menu, X } from 'lucide-react';
+}
+
+export default App;
+
 
 // Services data with online images & detailed descriptions
 const services = [
