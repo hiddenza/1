@@ -1,7 +1,7 @@
 // App.js
 import './App.css';
 import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Use BrowserRouter for cleaner URLs
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Services from './pages/Services';
@@ -11,7 +11,7 @@ import { Laptop, Server, Globe, Code, Phone, GraduationCap, Menu, X } from 'luci
 
 function App() {
   return (
-    <Router>
+    <Router basename="/1"> {/* Set basename to /1 */}
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
