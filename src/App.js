@@ -38,14 +38,16 @@ const services = [
       "Our development team delivers modern, responsive websites and applications tailored to your brand and audience. Utilizing the latest frameworks and best practices, we focus on UX, SEO, and scalability.",
     image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
   },
-  {
-    icon: <Phone className="w-10 h-10 text-blue-600" />,
-    title: "24/7 Support",
-    description: "Dedicated global tech support to keep your systems running around the clock.",
-    details:
-      "Our multilingual support team is available anytime to troubleshoot, maintain, and optimize your IT ecosystem, ensuring minimal downtime and maximum productivity.",
-    image: "https://images.unsplash.com/photo-1556741533-f6acd647d2fb?auto=format&fit=crop&w=800&q=80"
-  },
+ {
+  icon: <Phone className="w-10 h-10 text-blue-600" />,
+  title: "24/7 Support",
+  description: "Dedicated global tech support to keep your systems running around the clock.",
+  details:
+    "Our multilingual support team is available anytime to troubleshoot, maintain, and optimize your IT ecosystem, ensuring minimal downtime and maximum productivity.",
+  image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80"
+},
+
+,
   {
     icon: <GraduationCap className="w-10 h-10 text-blue-600" />,
     title: "Student Placement",
@@ -159,11 +161,13 @@ function Home() {
         />
         <div className="text-center md:text-left max-w-xl">
           <h2 className="text-4xl font-extrabold text-blue-700">Musaab Al-Dabbagh</h2>
-          <p className="text-blue-600 font-semibold mb-3">Founder & Visionary Technologist</p>
+          <p className="text-blue-600 font-semibold mb-3">Founder, CEO & Visionary Technologist</p>
           <p className="text-gray-700 mb-6 leading-relaxed">
-            A global innovator leading Hiddenza to redefine how technology, travel, and education empower lives.
-            With clients across 20+ countries, Musaab blends deep industry knowledge with bold creativity to deliver
-            solutions that truly transform.
+            Musaab Al-Dabbagh is the dynamic force behind Hiddenza, a trailblazing enterprise at the intersection of technology, travel, and education. As Founder and CEO, Musaab leads with a visionary mindset and unmatched expertise, driving innovation that empowers individuals and businesses across more than 20 countries worldwide.
+
+A globally recognized technologist and strategist, Musaab combines profound industry knowledge with bold creativity to craft transformative solutions that break boundaries and unlock new opportunities. His leadership is defined by a relentless pursuit of excellence, fostering a culture of innovation, integrity, and impactful growth.
+
+With a proven track record in spearheading large-scale digital initiatives and educational programs, Musaab is dedicated to shaping the future by bridging technology with real-world experiences, enabling Hiddenza’s clients to thrive in an ever-evolving global landscape.
           </p>
           <a
             href="#discover-hiddenza"
@@ -302,65 +306,122 @@ function About() {
     <main className="px-6 py-20 max-w-4xl mx-auto text-center">
       <h2 className="text-5xl font-bold text-blue-800">About Hiddenza</h2>
       <p className="mt-6 text-lg text-gray-700 leading-relaxed">
-        Hiddenza is a global consultancy blending technology innovation, luxury travel,
-        and elite education into powerful client outcomes. We've proudly served government agencies,
-        startups, and international students with unmatched excellence for over a decade.
+        Hiddenza stands as a premier global consultancy uniquely positioned at the crossroads of cutting-edge technology, bespoke luxury travel, and world-class educational guidance. For over a decade, we have been the trusted partner for government bodies, innovative startups, and ambitious international students—delivering unparalleled results that consistently exceed expectations.
+
+Our holistic and multidisciplinary approach transcends traditional consulting. We blend deep industry expertise, strategic foresight, and creative innovation to craft solutions that not only solve immediate challenges but also future-proof our clients’ success in an increasingly complex and fast-paced world.
+
+At Hiddenza, excellence is more than a standard—it’s our ethos. Our passionate team of seasoned professionals relentlessly pursues transformative impact, driving meaningful change and measurable growth across every sector we touch.
+
+Choosing Hiddenza means gaining a visionary ally who understands your unique ambitions and crafts personalized strategies that empower you to lead, innovate, and thrive on the global stage. Experience the difference of a consultancy that combines visionary insight with flawless execution—because your goals deserve nothing less than extraordinary.
       </p>
       <p className="mt-6 text-lg text-gray-700 leading-relaxed">
         Our multidisciplinary approach and passionate team ensure every project achieves lasting impact.
       </p>
     </main>
   );
+  
 }
 
 function Contact() {
   return (
-    <main className="px-6 py-20 max-w-3xl mx-auto">
-      <h2 className="text-4xl font-bold text-center text-blue-800 mb-10">Get in Touch</h2>
-      <form
-        action="https://formspree.io/f/mgegbgqe"
-        method="POST"
-        className="space-y-6 bg-white shadow-lg rounded-lg p-8"
-      >
-        <div className="grid md:grid-cols-2 gap-6">
-          <input
-            type="text"
-            name="name"
-            required
-            placeholder="Your Name"
-            className="border px-4 py-2 rounded w-full focus:outline-none focus:ring-2 focus:ring-blue-600"
-          />
-          <input
-            type="email"
-            name="email"
-            required
-            placeholder="Email Address"
-            className="border px-4 py-2 rounded w-full focus:outline-none focus:ring-2 focus:ring-blue-600"
-          />
-        </div>
-        <input
-          type="text"
-          name="subject"
-          placeholder="Subject"
-          className="border px-4 py-2 rounded w-full focus:outline-none focus:ring-2 focus:ring-blue-600"
-        />
-        <textarea
-          name="message"
-          rows="6"
-          required
-          placeholder="Your Message"
-          className="border px-4 py-2 rounded w-full focus:outline-none focus:ring-2 focus:ring-blue-600"
-        />
-        <button
-          type="submit"
-          className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded shadow transition"
+    <main className="max-w-3xl mx-auto px-6 py-20">
+      <h2 className="text-5xl font-bold mb-12 text-blue-800 text-center">Get in Touch with Hiddenza</h2>
+      <p className="text-center max-w-xl mx-auto mb-10 text-gray-700">
+        We're excited to hear from you! Use the form below or email us directly.
+      </p>
+
+      <div className="flex flex-col md:flex-row gap-12">
+        {/* Contact Form */}
+        <form
+          action="https://formspree.io/f/mvgakake"
+          method="POST"
+          className="flex-1 space-y-6 bg-white p-8 rounded-lg shadow-lg"
+          aria-label="Contact form"
         >
-          Send Message
-        </button>
-      </form>
+          <div>
+            <label htmlFor="name" className="block text-gray-800 font-semibold mb-2">
+              Your Name:
+            </label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              required
+              placeholder="Enter your name"
+              className="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-600 transition"
+            />
+          </div>
+
+          <div>
+            <label htmlFor="email" className="block text-gray-800 font-semibold mb-2">
+              Your Email:
+            </label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              required
+              placeholder="Enter your email"
+              className="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-600 transition"
+            />
+          </div>
+
+          <div>
+            <label htmlFor="message" className="block text-gray-800 font-semibold mb-2">
+              Your Message:
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              required
+              placeholder="Write your message here"
+              className="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-600 transition"
+            />
+          </div>
+
+          <button
+            type="submit"
+            className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-indigo-600 hover:to-blue-600 text-white font-semibold py-3 rounded-lg shadow-lg transition transform hover:scale-105"
+          >
+            Send Message
+          </button>
+        </form>
+
+        {/* Contact Info */}
+        <div className="flex-1 bg-gradient-to-tr from-blue-50 to-indigo-50 rounded-lg shadow-lg p-8 flex flex-col justify-center items-center text-center text-gray-700">
+          <h3 className="text-3xl font-extrabold mb-6 text-blue-800">Reach Out Anytime</h3>
+          <p className="text-lg max-w-xs mb-6">
+            For inquiries, collaborations, or just to say hello, email us at:
+          </p>
+          <a
+            href="mailto:musaab.asa@gmail.com"
+            className="text-blue-700 font-bold text-xl underline hover:text-indigo-700 transition"
+          >
+            musaab.asa@gmail.com
+          </a>
+          {/* Optional social links */}
+          <div className="mt-8 space-y-2 text-blue-600">
+            <p>
+              TikTok:{" "}
+              <a href="https://www.tiktok.com/@Hiddenza1" target="_blank" rel="noreferrer" className="hover:underline">
+                Hiddenza1
+              </a>
+            </p>
+            <p>
+              Instagram:{" "}
+              <a href="https://www.instagram.com/Hiddenza1" target="_blank" rel="noreferrer" className="hover:underline">
+                Hiddenza1
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
   );
 }
+
+
 
 function App() {
   return (
