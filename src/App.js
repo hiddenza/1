@@ -1,17 +1,12 @@
-// App.js
 import './App.css';
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Use BrowserRouter for cleaner URLs
-import Navbar from './components/Navbar';
-import Home from './pages/Home';
-import Services from './pages/Services';
-import About from './pages/About';
-import Contact from './pages/Contact';
+import { BrowserRouter as Router, Routes, Route, useLocation, Link } from 'react-router-dom';
+
 import { Laptop, Server, Globe, Code, Phone, GraduationCap, Menu, X } from 'lucide-react';
 
 
 
-export default App;
+
 
 
 // Services data with online images & detailed descriptions
@@ -438,13 +433,13 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/1" element={<Home />} />
+        <Route path="/1/services" element={<Services />} />
+        <Route path="/1/about" element={<About />} />
+        <Route path="/1/contact" element={<Contact />} />
       </Routes>
     </Router>
   );
-}
+};
 
 export default App;
