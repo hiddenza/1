@@ -33,6 +33,7 @@
     "extends": [
       "react-app",
       "react-app/jest"
+      "react-router-dom": "^6.26.2"
     ]
   },
   "browserslist": {
